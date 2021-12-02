@@ -19,14 +19,13 @@ int CreateNumber()
     return new Random().Next(1, 100);
 }
 
-// int answer = requestNumber();
 int secretNum = CreateNumber();
-Console.WriteLine(secretNum);
+// Console.WriteLine(secretNum);
 
 bool IsItTrue(int secretNum)
 {
     bool res = false;
-    for(int count = 2; count >= 0; count--)
+    for(int count = 4; count >= 0; count--)
     {
         int answer = requestNumber();
         if(secretNum == answer)
